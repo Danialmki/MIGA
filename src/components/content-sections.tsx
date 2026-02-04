@@ -76,7 +76,7 @@ export function ContentSections() {
           title="Freedom"
           description={"On January 8 and 9, 2026, massive protests erupted in cities across Iran, with hundreds of thousands of demonstrators—many of them young people—taking to the streets and chanting slogans like \"Freedom!\" and \"Death to the dictator!\" These largely peaceful demonstrations, driven by demands for political freedom and an end to the regime, were met with a violent crackdown. Security forces used live ammunition to suppress the protesters."}
           imagePosition="left"
-          imageSrc="/images/3.JPG"
+          imageSrc="/images/3.jpg"
         />
 
         <Separator className="max-w-4xl mx-auto" />
