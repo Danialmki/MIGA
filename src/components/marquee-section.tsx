@@ -1,34 +1,6 @@
 "use client";
 
-const topRowQuotes = [
-  "Make Iran Great Again",
-  "38,000 People Has Been Killed",
-  "Iran Massacre",
-  "King Reza Pahlavi",
-  "Kill The Dictator",
-  "Be With Iran",
-  "IRGC is a terrorist organisation",
-  "Save Iranians",
-  "Iran Holocaust",
-  "Make Iran Great Again",
-  "38,000 People Has Been Killed",
-  "Iran Massacre",
-];
-
-const bottomRowQuotes = [
-  "Kill The Dictator",
-  "Be With Iran",
-  "IRGC is a terrorist organisation",
-  "King Reza Pahlavi",
-  "Iran Massacre",
-  "Make Iran Great Again",
-  "38,000 People Has Been Killed",
-  "Save Iranians",
-  "Iran Holocaust",
-  "Kill The Dictator",
-  "Be With Iran",
-  "IRGC is a terrorist organisation",
-];
+import { useLanguage } from "@/lib/language-context";
 
 function TestimonialCard({ quote }: { quote: string }) {
   return (
@@ -47,6 +19,18 @@ function TestimonialCard({ quote }: { quote: string }) {
 }
 
 export function MarqueeSection() {
+  const { t } = useLanguage();
+  
+  const topRowQuotes = [
+    ...t.marquee.quotes,
+    ...t.marquee.quotes.slice(0, 3),
+  ];
+
+  const bottomRowQuotes = [
+    ...t.marquee.quotes.slice(4),
+    ...t.marquee.quotes.slice(0, 5),
+  ];
+
   return (
     <section className="py-16 md:py-24 lg:py-32 overflow-hidden bg-black">
       {/* Top Row - Animates Left */}

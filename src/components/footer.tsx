@@ -1,7 +1,12 @@
+"use client";
+
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
+import { useLanguage } from "@/lib/language-context";
 
 export function Footer() {
+  const { t } = useLanguage();
+
   return (
     <footer className="bg-muted/50 border-t border-border">
       <div className="w-full max-w-480 mx-auto px-6 md:px-12 lg:px-20 py-12 md:py-16 lg:py-20">
@@ -17,7 +22,7 @@ export function Footer() {
             <span className="text-2xl font-bold tracking-tight">MIGA</span>
           </Link>
           <p className="mt-4 text-sm text-muted-foreground max-w-xs">
-            Standing together for freedom, democracy, and human rights in Iran.
+            {t.footer.tagline}
           </p>
         </div>
 
@@ -25,10 +30,10 @@ export function Footer() {
 
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} MIGA. All rights reserved.
+            © {new Date().getFullYear()} {t.footer.copyright}
           </p>
           <p className="text-sm text-muted-foreground">
-            The photos on this website are real and not AI-generated.
+            {t.footer.photoDisclaimer}
           </p>
         </div>
       </div>
