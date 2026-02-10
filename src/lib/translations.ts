@@ -127,7 +127,7 @@ export const translations = {
   },
   it: {
     nav: {
-      beWithIran: "STAI CON L'IRAN",
+      beWithIran: "STATE CON L'IRAN",
       freeIran: "LIBERA L'IRAN",
     },
     hero: {
@@ -141,7 +141,7 @@ export const translations = {
         "Massacro in Iran",
         "Re Reza Pahlavi",
         "Morte al Dittatore",
-        "Stai con l'Iran",
+        "State con l'Iran",
         "L'IRGC è un'organizzazione terroristica",
         "Salvate gli Iraniani",
         "Olocausto Iraniano",

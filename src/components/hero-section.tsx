@@ -28,7 +28,7 @@ export function HeroSection() {
       {/* Hero Content */}
       <div className="relative z-10 h-full w-full flex flex-col justify-end">
         <div className="w-full max-w-480 mx-auto px-6 md:px-12 lg:px-20 pb-16 md:pb-24 lg:pb-32">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold tracking-tight leading-[0.9] max-w-[90%] md:max-w-[80%] lg:max-w-[70%]">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold tracking-tight leading-[0.9] max-w-[90%] md:max-w-[80%] lg:max-w-[70%] translate-y-[-15vh] sm:translate-y-0 transition-transform duration-300">
             <span className="block animate-slide-in-left">{t.hero.makeIran}</span>
             <span className="block text-primary animate-slide-in-left-delay">{t.hero.greatAgain}</span>
           </h1>

@@ -87,16 +87,18 @@ export function ContentSections() {
         <Separator className="max-w-4xl mx-auto" />
 
         {/* Section 3 */}
-        <FeatureSection
-          title={t.sections.foreignHelp.title}
-          description={
-            <p>
-              {t.sections.foreignHelp.description} <span className="underline">{t.sections.foreignHelp.killed}</span>, <span className="underline">{t.sections.foreignHelp.hanged}</span>, and <span className="underline">{t.sections.foreignHelp.imprisoned}</span> {t.sections.foreignHelp.descriptionEnd}
-            </p>
-          }
-          imagePosition="right"
-          imageSrc="/images/6.jpg"
-        />
+        <div id="foreign-help">
+          <FeatureSection
+            title={t.sections.foreignHelp.title}
+            description={
+              <p>
+                {t.sections.foreignHelp.description} <span className="underline">{t.sections.foreignHelp.killed}</span>, <span className="underline">{t.sections.foreignHelp.hanged}</span>, and <span className="underline">{t.sections.foreignHelp.imprisoned}</span> {t.sections.foreignHelp.descriptionEnd}
+              </p>
+            }
+            imagePosition="right"
+            imageSrc="/images/6.jpg"
+          />
+        </div>
 
         <Separator className="max-w-4xl mx-auto" />
 

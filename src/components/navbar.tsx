@@ -12,8 +12,11 @@ export function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const heroHeight = window.innerHeight;
-      setScrolledPastHero(window.scrollY > heroHeight * 0.8);
+      const foreignHelp = document.getElementById('foreign-help');
+      if (foreignHelp) {
+        const rect = foreignHelp.getBoundingClientRect();
+        setScrolledPastHero(rect.top <= 64); // 64px = navbar height
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
