@@ -111,34 +111,38 @@ export function ContentSections() {
         <Separator className="max-w-4xl mx-auto" />
 
         {/* Section 5 - Prince Reza Pahlavi */}
-        <FeatureSection
-          title={t.sections.princeReza.title}
-          description={
-            <p className="text-sm md:text-base lg:text-lg">
-              {t.sections.princeReza.description}
-            </p>
-          }
-          imagePosition="right"
-          imageSrc="/images/9.jpg"
-        />
+        <div id="prince-reza">
+          <FeatureSection
+            title={t.sections.princeReza.title}
+            description={
+              <p className="text-sm md:text-base lg:text-lg">
+                {t.sections.princeReza.description}
+              </p>
+            }
+            imagePosition="right"
+            imageSrc="/images/9.jpg"
+          />
+        </div>
 
         <Separator className="max-w-4xl mx-auto" />
 
         {/* Section 6 */}
-        <FeatureSection
-          title={t.sections.makeGreatAgain.title}
-          description={
-            <p>
-              {t.sections.makeGreatAgain.descriptionStart}{" "}
-              <Link href="https://x.com/search?q=%23KingRezaPahlavi" target="_blank" rel="noopener noreferrer" className="font-bold hover:text-foreground transition-colors">#KingRezaPahlavi</Link>,{" "}
-              <Link href="https://x.com/search?q=%23IranMassacre" target="_blank" rel="noopener noreferrer" className="font-bold hover:text-foreground transition-colors">#IranMassacre</Link>, and{" "}
-              <Link href="https://x.com/search?q=%23DigitalBlackoutInIran" target="_blank" rel="noopener noreferrer" className="font-bold hover:text-foreground transition-colors">#DigitalBlackoutInIran</Link>{" "}
-              {t.sections.makeGreatAgain.descriptionEnd}
-            </p>
-          }
-          imagePosition="right"
-          imageSrc="/images/8.jpg"
-        />
+        <div id="make-iran-great-again">
+          <FeatureSection
+            title={t.sections.makeGreatAgain.title}
+            description={
+              <p>
+                {t.sections.makeGreatAgain.descriptionStart}{" "}
+                <Link href="https://x.com/search?q=%23KingRezaPahlavi" target="_blank" rel="noopener noreferrer" className="font-bold hover:text-foreground transition-colors">#KingRezaPahlavi</Link>,{" "}
+                <Link href="https://x.com/search?q=%23IranMassacre" target="_blank" rel="noopener noreferrer" className="font-bold hover:text-foreground transition-colors">#IranMassacre</Link>, and{" "}
+                <Link href="https://x.com/search?q=%23DigitalBlackoutInIran" target="_blank" rel="noopener noreferrer" className="font-bold hover:text-foreground transition-colors">#DigitalBlackoutInIran</Link>{" "}
+                {t.sections.makeGreatAgain.descriptionEnd}
+              </p>
+            }
+            imagePosition="right"
+            imageSrc="/images/8.jpg"
+          />
+        </div>
       </div>
     </section>
   );
