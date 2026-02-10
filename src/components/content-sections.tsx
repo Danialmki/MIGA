@@ -110,7 +110,21 @@ export function ContentSections() {
 
         <Separator className="max-w-4xl mx-auto" />
 
-        {/* Section 5 */}
+        {/* Section 5 - Prince Reza Pahlavi */}
+        <FeatureSection
+          title={t.sections.princeReza.title}
+          description={
+            <p className="text-sm md:text-base lg:text-lg">
+              {t.sections.princeReza.description}
+            </p>
+          }
+          imagePosition="right"
+          imageSrc="/images/9.jpg"
+        />
+
+        <Separator className="max-w-4xl mx-auto" />
+
+        {/* Section 6 */}
         <FeatureSection
           title={t.sections.makeGreatAgain.title}
           description={
