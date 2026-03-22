@@ -31,13 +31,7 @@ function FeatureSection({
     >
       {/* Text Content */}
       <div className="flex-1 space-y-4 md:space-y-6">
-        <h2
-          className={
-            (title === "Prince Reza Pahlavi" || title === "Prinz Reza Pahlavi" || title === "Principe Reza Pahlavi")
-              ? "text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 md:mb-6 lg:mb-8 px-2 md:px-4 lg:px-6 hover:text-gray-500 transition-colors"
-              : "text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 md:mb-6 lg:mb-8 px-2 md:px-4 lg:px-6"
-          }
-        >
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 md:mb-6 lg:mb-8 px-2 md:px-4 lg:px-6">
           {title}
         </h2>
         <div className="text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-xl text-justify">
@@ -53,11 +47,7 @@ function FeatureSection({
               src={imageSrc}
               alt={title}
               fill
-              className={
-                title === "Prince Reza Pahlavi" || title === "Prinz Reza Pahlavi" || title === "Principe Reza Pahlavi"
-                  ? "object-cover hover:opacity-80 transition-opacity hover:grayscale"
-                  : "object-cover"
-              }
+              className="object-cover"
             />
           ) : (
             <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-secondary/10 flex items-center justify-center">
@@ -122,25 +112,7 @@ export function ContentSections() {
 
         <Separator className="max-w-4xl mx-auto" />
 
-        {/* Section 5 - Prince Reza Pahlavi */}
-        <div id="prince-reza">
-          <Link href="https://iranopasmigirim.com/en" target="_blank" rel="noopener noreferrer">
-            <FeatureSection
-              title={t.sections.princeReza.title}
-              description={
-                <p className="text-sm md:text-base lg:text-lg">
-                  {t.sections.princeReza.description}
-                </p>
-              }
-              imagePosition="right"
-              imageSrc="/images/9.jpg"
-            />
-          </Link>
-        </div>
-
-        <Separator className="max-w-4xl mx-auto" />
-
-        {/* Section 6 */}
+        {/* Section 5 */}
         <div id="make-iran-great-again">
           <FeatureSection
             title={t.sections.makeGreatAgain.title}

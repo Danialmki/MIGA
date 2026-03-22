@@ -52,7 +52,7 @@ export function Navbar() {
                 size="sm" 
                 className="whitespace-nowrap opacity-50 hover:opacity-100 transition-opacity"
                 onClick={() => {
-                  document.getElementById('prince-reza')?.scrollIntoView({ behavior: 'smooth' });
+                  document.getElementById('foreign-help')?.scrollIntoView({ behavior: 'smooth' });
                 }}
               >
                 {t.nav.freeIran}
